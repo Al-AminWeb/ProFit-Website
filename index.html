@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProFit</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/56458d5148.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .manrope-regular {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .manrope-medium {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .manrope-semibold {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .manrope-bold {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .manrope-extrabold {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+<!--header section-->
+<header>
+    <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor">
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 ">
+                        <li><a class="focus::bg-transparent hover:border-none hover:text-red-600">Home </a></li>
+                        <li><a class="hover:text-red-600">About</a></li>
+                        <li><a class="hover:text-red-600">Pages</a></li>
+                        <li><a class="hover:text-red-600">Blog</a></li>
+                        <li><a class="hover:text-red-600">contact</a></li>
+
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">ProFit</a>
+            </div>
+            <div class="navbar-center hidden lg:flex shadow-none">
+                <ul class="menu menu-horizontal px-1 manrope-regular text-base">
+                    <li><a class="focus::bg-transparent hover:border-none hover:text-red-600">Home </a></li>
+                    <li><a class="hover:text-red-600">About</a></li>
+                    <li><a class="hover:text-red-600">Pages</a></li>
+                    <li><a class="hover:text-red-600">Blog</a></li>
+                    <li><a class="hover:text-red-600">contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <i class="fa-solid fa-magnifying-glass m-3 text-[#89898B]"></i>
+                <a class="btn bg-red-600 text-white">Get Ticket</a>
+            </div>
+        </div>
+    </nav>
+
+<!--    banner section-->
+    <section class="container mx-auto py-10">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full relative">
+                <img
+                        src="Images/1.png"
+                        class="w-full rounded-lg" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between ">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+                <div class="bg-black text-white py-10 m-10 absolute rounded-xl bottom-5 right-5 w-[500px]">
+                    <h1 class="ml-3">Meet all the heroes from the field</h1>
+                    <p class="ml-3">The thrill of victory. A glimpse into the lives of the champions. <br> Who will be the next hero?</p>
+                </div>
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full">
+                 <img
+                    src="Images/1.png"
+                    class="w-full rounded-lg" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+                <div class="bg-black text-white py-10 m-10 absolute rounded-xl lg:bottom-5 right-5 w-[500px] sm:hidden">
+                    <h1 class="ml-3">Meet all the heroes from the field</h1>
+                    <p class="ml-3">The thrill of victory. A glimpse into the lives of the champions. <br> Who will be the next hero?</p>
+                </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full">
+                <img
+                        src="Images/1.png"
+                        class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+                <div class="bg-black text-white py-10 m-10 absolute rounded-xl bottom-5 right-5 w-[500px]">
+                    <h1 class="ml-3">Meet all the heroes from the field</h1>
+                    <p class="ml-3">The thrill of victory. A glimpse into the lives of the champions. <br> Who will be the next hero?</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</header>
+
+<main>
+
+</main>
+
+
+</body>
+</html>
